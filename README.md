@@ -2,7 +2,8 @@
 
 # First Code for Project 1:
 
-```import plotly.express as px
+```
+import plotly.express as px
 from shiny.express import input, ui
 from shinywidgets import render_plotly
 import palmerpenguins
@@ -18,11 +19,13 @@ with ui.layout_columns():
 
     @render_plotly
     def plot2():
-        return px.histogram(px.data.tips(), y="total_bill")```
+        return px.histogram(px.data.tips(), y="total_bill")
+```
 
-# Code for Project 2:
+# Code for Project 2 
 
-```# app.py
+```
+# app.py
 
 import palmerpenguins
 import pandas as pd
@@ -137,4 +140,5 @@ def plotly_scatterplot():
         symbol="species",
         size="body_mass_g",
         hover_data=["species", "island"]
-    )```
+    )
+```
